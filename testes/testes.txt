@@ -1,0 +1,1 @@
+curl.exe -i -v http://localhost/appjuridico2020/src/clientes/modelo/create-cliente.php -d "nome=Maria&telefone=989823&email=sdfksdfs&ativo=off&dataagora=01/08/2020 21:00:00"

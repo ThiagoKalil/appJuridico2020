@@ -1,0 +1,66 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 60px 60px 1fr 60px;
+    grid-template-areas: "cabecalho" "navegacao" "principal" "rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #1867c0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    z-index: 2;
+    box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #444;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    color: #fff;
+}
+
+.cabecalho > h1 {
+    margin: 0px;
+    font-weight: 200;
+    font-size: 2.8rem;
+}
+
+.principal {
+    grid-area: principal;
+    height: calc(100vh - 180px);
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.conteudo {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
+}
+
+nav {
+    z-index: 1;
+}
+
+a {
+    cursor: pointer;
+}
